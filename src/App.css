@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+body{
+    background-color: #f7f7f7;
+}
+.container{
+    max-width: 1640px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}

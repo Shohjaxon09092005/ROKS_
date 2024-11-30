@@ -1,0 +1,109 @@
+.new-doctors-page {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(to bottom, #e8f5e9, #c8e6c9);
+    margin-top: 100px;
+}
+
+.new-doctors-page .section-title {
+    font-size: 32px;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.new-doctors-page .section-description {
+    font-size: 16px;
+    color: #4caf50;
+    margin-bottom: 40px;
+}
+
+.new-doctors-page .new-doctors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.new-doctors-page .doctor-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 500px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-doctors-page .doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.new-doctors-page .doctor-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.new-doctors-page .doctor-info {
+    padding: 15px;
+}
+
+.new-doctors-page .doctor-name {
+    font-size: 20px;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.new-doctors-page .doctor-position {
+    font-size: 16px;
+    color: #4caf50;
+    margin: 5px 0;
+}
+
+.new-doctors-page .doctor-bio {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.new-doctors-page .doctor-rating {
+    display: flex;
+    align-items: center;
+}
+
+.new-doctors-page .star-icon,
+.half-star-icon {
+    color: #ffc107;
+    font-size: 18px;
+}
+
+.new-doctors-page .rating-number {
+    font-size: 14px;
+    color: #666;
+    margin-left: 5px;
+}
+
+.new-doctors-page .doctors-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.new-doctors-page  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.new-doctors-page .btn-primary {
+    background-color: #28a745;
+    color: white;
+}
+
+.new-doctors-page .btn-secondary {
+    background-color: #dc3545;
+    color: white;
+}

@@ -1,0 +1,91 @@
+/* Umumiy sozlamalar */
+.home_container {
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Bo'limlar nomlari */
+  .section_title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00796b;
+    font-weight: bold;
+  }
+  
+  /* Klinika haqida bo'limi */
+  .about_section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about_description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .about_stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .stat_item {
+    text-align: center;
+  }
+  
+  .stat_item h3 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 5px;
+  }
+  
+  .stat_item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Qadriyatlar bo'limi */
+  .values_section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .values_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .value_item {
+    background-color: #e0f2f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .value_item h3 {
+    color: #00796b;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .value_item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    text-align: justify;
+  }
+  

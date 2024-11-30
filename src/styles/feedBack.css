@@ -1,0 +1,53 @@
+.feedback-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .feedback-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 150px;
+  }
+  
+  .feedback-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .customer-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .customer-comment {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+  
+  .customer-rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  @media(max-width:600px){
+    .feedback-card{
+      height: 200px;
+    }
+  }

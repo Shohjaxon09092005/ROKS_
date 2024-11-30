@@ -1,0 +1,84 @@
+/* Umumiy uslublar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .services-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .services-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+  }
+  
+  /* Kartochka grid */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .service-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: black;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #6c757d !important;
+  }
+  
+  /* Tugma uslubi */
+  .view-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #0056b3;
+  }
+  

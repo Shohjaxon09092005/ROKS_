@@ -1,0 +1,331 @@
+/* Umumiy header uslubi */
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    /* Oq matn */
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #2ecc71;
+    /* Yashil fon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000 !important;
+
+}
+
+/* Logo qismi */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    /* Oq matn */
+}
+
+/* Havolalar */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    /* Oq matn */
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #fff;
+    /* Qizil hover effekti */
+}
+
+/* Tugmalar va harakatlar */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.request-btn {
+    background-color: #e74c3c;
+    /* Qizil tugma */
+    color: #ffffff;
+    /* Oq matn */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.request-btn:hover {
+    background-color: #c0392b;
+    /* Qizil hover effekti */
+}
+
+.login {
+    color: #ffffff;
+    /* Oq matn */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login:hover {
+    color: #e74c3c;
+    /* Qizil hover effekti */
+}
+
+.search-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .language-btn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .language-menu {
+    display: none; /* Avvaliga yashirin bo‘ladi */
+    position: absolute;
+    background-color: #ffffff;
+    color: #2ecc71; /* Yashil matn */
+    border: 1px solid #e74c3c; /* Qizil border */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    top: 35px;
+    right: 0;
+    z-index: 100;
+  }
+  
+  .language-menu span {
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .language-menu span:hover {
+    background-color: #2ecc71; /* Hover effekti */
+    color: #ffffff;
+  }
+  
+  .language-dropdown:hover .language-menu {
+    display: block; /* Hover qilganda menyu ko‘rinadi */
+  }
+  /* Qidiruv rejimi */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid #e74c3c; /* Qizil border */
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .search-input:focus {
+    border-color: #2ecc71; /* Yashil border fokusda */
+  }
+  
+  .close-search {
+    background-color: #e74c3c; /* Qizil tugma */
+    color: #ffffff; /* Oq matn */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-search:hover {
+    background-color: #c0392b; /* Qizil hover effekti */
+  }
+  
+  /* Qidiruv tugmasi (🔍) */
+  .search-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff; /* Oq rang */
+  }
+  
+  .search-icon:hover {
+    color: #e74c3c; /* Qizil hover effekti */
+  }
+  .modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: 10000 !important;
+    transform: translateX(20000px);
+    transition: 2s;
+  }
+  .modal_wrapper{
+    background-color: gray;
+    width: 40%;
+    height: 100vh;
+  }
+  .modal .modal_wrapper .nav-links{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal_wrapper .modal_button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+
+  }
+  .burgerIcon{
+    width: 40px;
+    display: none;
+    
+  }
+  .openModal{
+    transform: translateX(0px);
+    transition:1ms;
+  }
+  .menu_wrapper_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+  }
+  @media(max-width:1360px){
+   .header_wrapper{
+    display: flex;
+    flex-direction: column;
+   }
+   .menu_wrapper_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+
+   }
+  }
+  
+  @media(max-width:1200px){
+    .nav-links{
+      display: none;
+    }
+    .burgerIcon{
+      display: block;
+    }
+    .header_wrapper{
+      display: flex;
+      flex-direction:row;
+    }
+    .menu_wrapper_header{
+      width: 40%;
+    }
+    .search-bar{
+      position: fixed;
+      left: 20%;
+      right: 0;
+      bottom: 70%;
+      box-shadow: 3px -3px 2px red;
+      z-index: 2000 !important;
+    }
+ 
+  
+  }
+  @media(max-width:700px){
+    .request-btn{
+      display: none;
+    }
+    .modal button{
+      display: block;
+    }
+    .modal_wrapper{
+      width: 50%;
+    }
+    .search-bar{
+      width: 60%;
+    }
+  }
+  @media(max-width:550px){
+    .logo img{
+      height: 50px;
+    }
+  }
+  @media(max-width:530px){
+    .logo span{
+      display: none;
+    }
+    .menu_wrapper_header{
+      width: 50%;
+    }
+  }
+  @media(max-width:450px){
+    
+    .menu_wrapper_header{
+      width: 55%;
+    }
+    .modal_wrapper{
+      width: 70%;
+    }
+  }
+  @media(max-width:400px){
+   
+    .logo{
+      margin-left: 0;
+
+    }
+    .menu_wrapper_header{
+      width: 50%;
+    }
+    .burgerIcon{
+      width: 30px;
+    }
+    .language-btn{
+      padding: 2px;
+    }
+    .header_wrapper{
+      flex-direction: column;
+    }
+    .actions{
+      gap: 30px;
+    }
+    .logo img{
+      height: 70px;
+    }
+  }
+  @media(max-width:370px){
+    .menu_wrapper_header{
+      width: 60%;
+    }
+    .actions{
+      gap: 25px;
+    }
+  }

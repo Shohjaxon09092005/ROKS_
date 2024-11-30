@@ -1,0 +1,80 @@
+/* DoctorsTeam.css */
+.doctors-team {
+    background-color: #f7f8fa; /* Yengil kulrang fon */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    color: #333; /* Qora rang */
+    margin-bottom: 10px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+    color: #555; /* Yengil qora */
+    margin-bottom: 30px;
+  }
+  
+  .doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .doctor-card {
+    background-color: #fff; /* Oq kartochka */
+    border: 1px solid #ddd; /* Yengil ramka */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .doctor-name {
+    font-size: 18px;
+    color: #333; /* Qora */
+    margin-bottom: 5px;
+  }
+  
+  .doctor-position {
+    font-size: 14px;
+    color: #666; /* Yengil qora */
+  }
+  
+  .team-button .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ff4d4d; /* Qizil */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .team-button .btn:hover {
+    background-color: #e63939; /* Qizilning quyuqroq ko‘rinişi */
+  }
+  
+  .team-button .btn svg {
+    margin-left: 8px;
+  }
+  
